@@ -1,6 +1,6 @@
 {
   "name": "@modernized/jpeg-exif",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Get EXIF/TIFF metadata from JPEG and TIFF files. Maintained fork of `jpeg-exif`.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -75,14 +75,14 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@types/node": "^26.0.1",
-    "eslint": "^10.3.0",
+    "@types/node": "^26.1.1",
+    "eslint": "^10.7.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-promise": "^7.3.0",
     "eslint-plugin-unicorn": "^65.0.1",
     "globals": "^17.6.0",
-    "prettier": "^3.8.3",
+    "prettier": "^3.9.5",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.59.2"
+    "typescript-eslint": "^8.64.0"
   }
 }
