@@ -6,3 +6,6 @@ dist-test/
 .claude/
 *.log
 *~
+
+# jscpd duplication-scan output (see .github/workflows/duplication-scan.yaml)
+report/

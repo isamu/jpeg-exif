@@ -45,7 +45,8 @@
     "coverage": "node --test --experimental-test-coverage \"dist-test/test/**/*.test.js\"",
     "precoverage:check": "yarn build:test",
     "coverage:check": "node --test --experimental-test-coverage --test-coverage-lines=90 --test-coverage-branches=70 --test-coverage-functions=90 \"dist-test/test/**/*.test.js\"",
-    "prepack": "yarn build"
+    "prepack": "yarn build",
+    "knip": "knip"
   },
   "keywords": [
     "jpeg",
@@ -81,6 +82,7 @@
     "eslint-plugin-promise": "^7.3.0",
     "eslint-plugin-unicorn": "^65.0.1",
     "globals": "^17.8.0",
+    "knip": "^6",
     "prettier": "^3.9.6",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.65.0"

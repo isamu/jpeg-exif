@@ -1,0 +1,27 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  // src/index.ts is the published public API barrel. package.json "main"/"module"/"exports"
+  // point at dist/ (the build output), which does not map back to src during analysis, so knip
+  // does NOT auto-detect src/index.ts as an entry — it must be listed, or its re-exported public
+  // types (ExifValue/TagName/ParseCallback) get flagged as unused. Every test/*.ts is a
+  // standalone test module run by `node --test`, so they are entry points, not analyzed source.
+  "entry": ["src/index.ts", "test/**/*.ts"],
+  "project": ["src/**/*.ts"],
+  "ignoreExportsUsedInFile": true,
+  "includeEntryExports": false,
+  "rules": {
+    // Warn mode: every rule is "warn" (reported, exit 0) or "off". Nothing gates CI here.
+    "files": "warn",
+    "dependencies": "warn",
+    "devDependencies": "warn",
+    "unlisted": "warn",
+    "exports": "warn",
+    "types": "warn",
+    "unresolved": "off",
+    "binaries": "off",
+    "nsExports": "off",
+    "nsTypes": "off",
+    "enumMembers": "off",
+    "duplicates": "off",
+  },
+}
